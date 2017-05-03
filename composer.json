@@ -1,0 +1,11 @@
+{
+    "name": "blamoo/dirtyhtmltools",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Luis Henrique Soler",
+            "email": "luis.soler@solutudo.com.br"
+        }
+    ],
+    "require": {}
+}
