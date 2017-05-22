@@ -6,6 +6,8 @@ class Tag extends Element
     public $name;
     public $children = array();
     public $attributes = array();
+	public $isRoot = false;
+	public $filtered = false;
 
     public function __construct()
     {
@@ -15,6 +17,15 @@ class Tag extends Element
     public function ToHtml()
     {
         $sb = '';
+        if ($this->filtered || $this->isRoot) {
+            foreach ($this->children as $item)
+            {
+                $sb .= $item->ToHtml();
+            }
+            return $sb;
+        }
+        
+        
         $sb .= '<';
         $sb .= $this->name;
 

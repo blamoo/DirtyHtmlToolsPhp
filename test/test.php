@@ -1,6 +1,6 @@
 <?php
-exit;
 namespace DirtyHtmlTools;
+exit;
 
 $dir_iterator = new \RecursiveDirectoryIterator(dirname(__DIR__).'/src', \FilesystemIterator::SKIP_DOTS);
 $iterator = new \RecursiveIteratorIterator($dir_iterator);
